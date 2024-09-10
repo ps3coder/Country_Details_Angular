@@ -16,7 +16,7 @@ A simple AngularJS web application to display a list of countries in card format
 - **Styling**: Custom CSS for card layouts and page styling
 
 ## Clone the repository
-git clone https://github.com/your-username/country-explorer.git
+git clone https://github.com/ps3coder/Country_Details_Angular.git
 
 ## Navigate into the project directory
 cd country-explorer
