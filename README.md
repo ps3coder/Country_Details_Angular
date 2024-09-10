@@ -21,11 +21,9 @@ git clone https://github.com/your-username/country-explorer.git
 ## Navigate into the project directory
 cd country-explorer
 
-## Install dependencies
-npm install
+## Start the live server on port 5000
 
-## Start the development server
-npm start
+
 
 ## For Contact:
 ps3threee@gmail.com
