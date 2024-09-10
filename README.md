@@ -20,8 +20,7 @@ git clone https://github.com/your-username/country-explorer.git
 
 ## Navigate into the project directory
 cd country-explorer
-
-## Start the live server on port 5000
+Start the live server 
 
 
 
