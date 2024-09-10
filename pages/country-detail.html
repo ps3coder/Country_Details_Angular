@@ -1,0 +1,32 @@
+<a href="/" class="back-button"> Back</a>
+<div class="country-detail" ng-if="country">
+  <h2>{{country.name.common}}</h2>
+  <img
+    ng-src="{{country.flags.svg}}"
+    alt="{{country.name.common}} flag"
+    class="flag-img-large"
+  />
+  <div class="country-info">
+    <p><strong>Native Name:</strong> {{country.nativeName}}</p>
+    <p><strong>Population:</strong> {{country.population | number}}</p>
+    <p><strong>Region:</strong> {{country.region}}</p>
+    <p><strong>Sub Region:</strong> {{country.subregion}}</p>
+    <p><strong>Capital:</strong> {{country.capital}}</p>
+    <p>
+      <strong>Top Level Domain:</strong> {{country.topLevelDomain.join(', ')}}
+    </p>
+    <p>
+      <strong>Currencies:</strong>
+      <span ng-repeat="currency in country.currencies">
+        {{currency.name}} ({{currency.symbol}})
+      </span>
+    </p>
+    <p>
+      <strong>Languages:</strong>
+      <span ng-repeat="language in country.languages">
+        {{language.name}}{{$last ? '' : ', '}}
+      </span>
+    </p>
+    <p><strong>Border Countries:</strong> {{country.borders.join(', ')}}</p>
+  </div>
+</div>

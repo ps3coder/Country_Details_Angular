@@ -1,0 +1,157 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+}
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.8rem;
+  color: hsl(200, 15%, 8%);
+}
+
+/* For Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+input[type="text"],
+select {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 52%);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  outline: none;
+  color: hsl(200, 15%, 8%);
+}
+
+/* For Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px;
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.flag-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.card-details {
+  padding: 10px;
+  margin: 5px 0;
+}
+.card-details h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: hsl(200, 15%, 8%);
+}
+.card-details p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: hsl(0, 0%, 52%);
+}
+.card-details strong {
+  color: hsl(200, 15%, 8%);
+}
+
+/* For Selected Country */
+.country-detail {
+  width: 1080px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 10px 10px;
+  margin-top: 50px;
+  gap: 10px;
+}
+.flag-img-large {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.country-info {
+  margin-bottom: 20px;
+}
+.country-info p {
+  margin: 10px 0;
+}
+.country-info span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.country-info .borders {
+  display: inline;
+  margin-top: 10px;
+}
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: hsl(200, 15%, 8%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.back-button:hover {
+  background-color: rgba(181, 174, 174, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .country-detail {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .country-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .card-container {
+    margin: 10px;
+  }
+  input[type="text"],
+  select {
+    width: 90%;
+  }
+  .country-detail {
+    width: 100%;
+    padding: 10px;
+  }
+  .back-button {
+    font-size: 14px;
+  }
+}

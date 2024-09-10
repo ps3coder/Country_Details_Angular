@@ -1,0 +1,35 @@
+<div class="search-container">
+  <input
+    type="text"
+    ng-model="searchText"
+    placeholder="Search for a country..."
+  />
+  <select ng-model="selectedRegion">
+    <option value="">All Regions</option>
+    <option value="Asia">Asia</option>
+    <option value="Africa">Africa</option>
+    <option value="Americas">Americas</option>
+    <option value="Antarctic">Antarctic</option>
+    <option value="Europe">Europe</option>
+    <option value="Oceania">Oceania</option>
+  </select>
+</div>
+<div class="card-container">
+  <div
+    class="card"
+    ng-repeat="country in filteredCountries | filter:searchText | orderBy:'name' track by country.id"
+    ng-click="showCountryDetails(country.id)"
+  >
+    <img
+      ng-src="{{country.flags.png}}"
+      alt="{{country.name.common}} flag"
+      class="flag-img"
+    />
+    <div class="card-details">
+      <h2>{{country.name.common}}</h2>
+      <p><strong>Population:</strong> {{country.population | number}}</p>
+      <p><strong>Region:</strong> {{country.region}}</p>
+      <p><strong>Capital:</strong> {{country.capital}}</p>
+    </div>
+  </div>
+</div>
