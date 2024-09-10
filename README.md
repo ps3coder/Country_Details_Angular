@@ -15,15 +15,17 @@ A simple AngularJS web application to display a list of countries in card format
 - **Data**: JSON file with country data
 - **Styling**: Custom CSS for card layouts and page styling
 
-bash ``` 
-
+## Clone the repository
 git clone https://github.com/your-username/country-explorer.git
 
-
+## Navigate into the project directory
 cd country-explorer
 
+## Install dependencies
 npm install
 
+## Start the development server
 npm start
 
-```
+## For Contact:
+ps3threee@gmail.com
