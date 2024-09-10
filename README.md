@@ -20,6 +20,7 @@ git clone https://github.com/ps3coder/Country_Details_Angular.git
 
 ## Navigate into the project directory
 cd country-explorer
+
 Start the live server 
 
 
